@@ -1,5 +1,5 @@
 {% set name = "github-webhook" %}
-{% set version = "1.0.2" %}
+{% set version = "1.0.3" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 5b13f43f1b764f688426f166c69d0dcdc4a1d88fa87a9017d127ed5752714d12
+    sha256: 3529bc9c5e29d2b068c2a044d3db7ef5253a9069317bf2a67b460370b4285341
   - url: https://raw.githubusercontent.com/bloomberg/python-github-webhook/master/LICENSE
     sha256: c7da80d92a14d353b0f4ebbe917e155b4051f280ae665035ab5d4a4b9613a506
 
