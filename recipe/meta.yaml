@@ -1,5 +1,5 @@
 {% set name = "github-webhook" %}
-{% set version = "1.0.3" %}
+{% set version = "1.0.4" %}
 
 package:
   name: {{ name|lower }}
@@ -7,14 +7,14 @@ package:
 
 source:
   - url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-    sha256: 3529bc9c5e29d2b068c2a044d3db7ef5253a9069317bf2a67b460370b4285341
+    sha256: b2444dbfd03deda35792bd00ebd1692597c2605c61445da79da6322afaca7a8d
   - url: https://raw.githubusercontent.com/bloomberg/python-github-webhook/master/LICENSE
     sha256: c7da80d92a14d353b0f4ebbe917e155b4051f280ae665035ab5d4a4b9613a506
 
 build:
   noarch: python
   number: 0
-  script: "{{ PYTHON }} -m pip install . -vv"
+  script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
@@ -34,7 +34,7 @@ about:
   license: Apache-2.0
   license_family: Apache
   license_file: LICENSE
-  summary: 'Very simple, but powerful, microframework for writing Github webhooks in Python.'
+  summary: Very simple, but powerful, microframework for writing Github webhooks in Python.
 
   description: |
     python-github-webhook is a very simple, but powerful, 
